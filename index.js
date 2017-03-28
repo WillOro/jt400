@@ -2,7 +2,7 @@ import JT400 from './lib/JT400';
 module.exports = require('./lib/jt400');
 static Properties props;
 
-var local_system=130.1.1.66;
+var local_system="130.1.1.66";
 var userId=USR_DOCKER;
 var password=DOCKER1;
 
