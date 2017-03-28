@@ -1,3 +1,5 @@
+import JT400 from './lib/JT400';
+module.exports = require('./lib/jt400');
 static Properties props;
 
 var local_system=130.1.1.66;
@@ -16,7 +18,7 @@ try {
  //Connect to iSeries 
  Class.forName(DRIVER); 
  conn = DriverManager.getConnection(URL, props.getProperty("userId").trim(), props.getProperty("password").trim()); 
-
+ System.out.println("Conectado...");
  conn.close();
 
 }
